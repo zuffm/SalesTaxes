@@ -36,11 +36,11 @@ public class Tax {
 	/**
 	 * Calculate the tax value applying the rounding policy
 	 * @param price
-	 * @param tax
+	 * @param taxRate
 	 * @return BigDecimal
 	 */
-	private BigDecimal calculateTax(BigDecimal price, BigDecimal tax) {
-		return applyRound(price.multiply(tax));
+	private BigDecimal calculateTax(BigDecimal price, BigDecimal taxRate) {
+		return applyRound(price.multiply(taxRate));
 	}
 	
 	/**
